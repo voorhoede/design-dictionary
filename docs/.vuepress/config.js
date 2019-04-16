@@ -26,7 +26,7 @@ const getDropboxDocumentLocation = pipe([
 ]);
 
 module.exports = {
-  title: 'Playbook',
+  title: 'Digital Design Dictionary',
   themeConfig: {
     sidebar: generateSidebar(documentsMetaData),
   },

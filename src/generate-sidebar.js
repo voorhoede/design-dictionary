@@ -22,6 +22,7 @@ const generateSidebar = pipe([
   map (([key, value]) => ({
     'title': key,
     'children': value,
+    'collapsable': false
   })),
 ]);
 

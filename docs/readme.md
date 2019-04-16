@@ -1,5 +1,5 @@
 ---
-home: true
+home: false
 doc_id: homepage
 heroImage: heroes.svg
 heroText: Playbook
