@@ -6,13 +6,6 @@
     <span v-else class="last-updated last-updated--date">
       Last updated: <time :datatime="lastUpdate">{{ lastUpdate }}</time>
     </span>
-    <a
-      class="edit-link"
-      :href="`https://paper.dropbox.com/doc/${id}`"
-      rel="noopener" target="_blank"
-    >
-      Edit on Dropbox
-    </a>
   </header>
 </template>
 
@@ -29,7 +22,8 @@
         type: String,
       },
       date: {
-        type: String,
+				type: String,
+				default: ''
       },
       isHomePage: {
         type: Boolean,
