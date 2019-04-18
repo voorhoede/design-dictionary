@@ -8,8 +8,7 @@
 }
 
 .navbar .site-name {
-  margin-left: spacingHalf;
-  color: blue;
+  margin-left: 40px;
 }
 
 .navbar .links {
@@ -43,6 +42,10 @@
 }
 
 @media (min-width: 720px) {
+	.theme-container .sidebar {
+		top: 200px;
+	}
+
   .theme-container:not(.no-sidebar) .navbar {
     background-color: white;
     border: none;
@@ -64,19 +67,20 @@
 
   .navbar .site-name {
     position: relative;
-    margin: .4rem spacingDouble;
-
+		font-size: 2.5rem;
+		font-weight: 900;
+		font-style: normal;
+		line-height: 1.1;
   }
 
   .navbar .site-name:after {
     position: absolute;
     content: 'by Hike One';
-    bottom: -50%;
+		font-size: 1rem;
+		font-weight: 500;
+    top: 105%;
     left: 0;
-    font-size: 11px;
-    font-style: italic;
     width: 100%;
-    font-weight: 400;
   }
 
   .theme-container .navbar {

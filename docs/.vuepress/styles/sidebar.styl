@@ -1,39 +1,34 @@
+.sidebar > .sidebar-links {
+	padding: 0 40px;
+}
+
 .theme-container .sidebar {
-  box-sizing: border-box;
   background-color: bgPastel;
   border: 2px solid bgPastel;
 }
 
 .sidebar-heading {
   margin-bottom: spacingDefault;
-  color: blue;
 }
 
-.sidebar-heading span {
-  position: relative;
+.sidebar-heading {
+	padding: 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 1.5;
+	text-transform: uppercase;
+	border: 0;
 }
 
-.sidebar-heading span:after {
-  content: '';
-  position:absolute;
-  left: 0;
-  bottom: -7px;
-  width: 0%;
-  height 100%;
-  border-bottom: 2px solid brandYellow;
-}
-
-.sidebar-heading:hover span:after {
-  transition: all .4s ease;
-  width: 100%;
-}
-
-.sidebar .sidebar-links {
-  color: blue;
+.sidebar-group a.sidebar-link {
+	padding: 0;
 }
 
 a.sidebar-link {
-  padding: spacingHalf spacingMedium;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: greyDark;
 }
 
 .sidebar-sub-headers a.sidebar-link.active {

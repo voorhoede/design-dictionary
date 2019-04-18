@@ -1,3 +1,4 @@
+@import css-defaults
 @import fonts
 @import variables
 @import home
@@ -7,10 +8,56 @@
 @import page-navigation
 
 body {
-  font-family: 'apercu', Arial, sans-serif !important;
-  margin: 0;
+  font-family: 'gilroy', Arial, sans-serif;
+	font-weight: 500;
 }
 
-h1, h2 {
-  color: blue;
+b,
+strong {
+	font-weight: 700;
+}
+
+.body-small {
+	font-size: .75rem;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 1.5;
+}
+
+.body-medium {
+	font-size: 1rem;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 1.5;
+}
+
+.body-large {
+	font-size: 1.5rem;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 1.5;
+}
+
+h1,
+.heading-small {
+	font-size: 2rem;
+	font-weight: 900;
+	font-style: normal;
+	line-height: 1.13;
+}
+
+h2,
+.heading-medium {
+	font-size: 2.5rem;
+	font-weight: 900;
+	font-style: normal;
+	line-height: 1.1;
+}
+
+h3,
+.heading-large {
+	font-size: 3rem;
+	font-weight: 900;
+	font-style: normal;
+	line-height: 1.08;
 }
