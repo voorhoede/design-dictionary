@@ -3,18 +3,12 @@
   border-color: border-color;
 }
 
-.navbar .site-name {
-	margin-top: 35px;
-  margin-left: 40px;
-	margin-right: 40px;
-	background: white;
-}
-
 .navbar .links {
   background-color: transparent;
 }
 
 .navbar .sidebar-button {
+	top: 16px;
   background-color: $accentColor;
 }
 
@@ -41,6 +35,17 @@
 }
 
 @media (min-width: 720px) {
+	.navbar .sidebar-button {
+		top: 0;
+	}
+
+	.navbar .site-name {
+		margin-top: 35px;
+		margin-left: 40px;
+		margin-right: 40px;
+		background: white;
+	}
+
 	.theme-container .sidebar {
 		top: 200px;
 		padding-top: 40px;
