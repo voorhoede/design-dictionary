@@ -1,14 +1,13 @@
-.theme-container.sidebar-open .navbar {
-  background-color: bgPastel;
-}
-
 .theme-container .navbar {
-  background-color: bgPastel;
+  background-color: #fff;;
   border-color: border-color;
 }
 
 .navbar .site-name {
+	margin-top: 35px;
   margin-left: 40px;
+	margin-right: 40px;
+	background: white;
 }
 
 .navbar .links {
@@ -16,7 +15,7 @@
 }
 
 .navbar .sidebar-button {
-  background-color: blue;
+  background-color: $accentColor;
 }
 
 .sidebar-button svg,
@@ -44,10 +43,11 @@
 @media (min-width: 720px) {
 	.theme-container .sidebar {
 		top: 200px;
+		padding-top: 40px;
 	}
 
   .theme-container:not(.no-sidebar) .navbar {
-    background-color: white;
+    background-color: greyLight;
     border: none;
   }
 
@@ -56,9 +56,9 @@
   }
 
   .home-link {
-    width: 16.4rem;
-    height: 100%;
-    background-color: bgPastel;
+    width: 340px;
+    height: 200px;
+    background-color: #fff;
   }
 
   .navbar {
@@ -101,11 +101,5 @@
 @media (min-width: 960px) {
   .theme-container:not(.no-sidebar) .links {
     width: maxWidthLarge;
-  }
-
-  .home-link {
-    width: 20rem;
-    height: 100%;
-    background-color: bgPastel;
   }
 }

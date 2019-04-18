@@ -6,6 +6,11 @@
 @import sidebar
 @import navbar
 @import page-navigation
+@import content
+
+html {
+	background-color: greyLight;
+}
 
 body {
   font-family: 'gilroy', Arial, sans-serif;
@@ -15,6 +20,20 @@ body {
 b,
 strong {
 	font-weight: 700;
+}
+
+.page {
+	background-color: greyLight;
+}
+
+.edit-link {
+	display: none;
+}
+
+@media (min-width: 720px) {
+	.page {
+		padding-left: 341px;
+	}
 }
 
 .body-small {
@@ -39,11 +58,11 @@ strong {
 }
 
 h1,
-.heading-small {
-	font-size: 2rem;
+.heading-large {
+	font-size: 3rem;
 	font-weight: 900;
 	font-style: normal;
-	line-height: 1.13;
+	line-height: 1.08;
 }
 
 h2,
@@ -55,9 +74,9 @@ h2,
 }
 
 h3,
-.heading-large {
-	font-size: 3rem;
+.heading-small {
+	font-size: 2rem;
 	font-weight: 900;
 	font-style: normal;
-	line-height: 1.08;
+	line-height: 1.13;
 }
