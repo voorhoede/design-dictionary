@@ -104,7 +104,8 @@ module.exports = {
   },
   dest: './dist',
   head: [
-    ['link', { rel: 'icon', href: '/icons/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/icons/favicon-32x32.png', sizes: '32x32' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/icons/favicon-96x96.png', sizes: '96x96' }],
     ['link', { rel: 'manifest', href: '/manifest.json', crossorigin: 'use-credentials' }],
     ['meta', { name: 'theme-color', content: manifest.theme_color }],
   ],
