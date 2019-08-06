@@ -1,11 +1,17 @@
 .search-box input {
   color: greyDark;
-  background-image: url('/search--blue.svg');
+  background-image: url('/icon-search.svg');
   background-position: 12px center;
 }
 
 .search-box input:focus {
   border-color: greyDark;
+}
+
+.search-box input:focus,
+.search-box input:active {
+  background-image: none;
+  background-color: white;
 }
 
 .search-box .suggestions {
