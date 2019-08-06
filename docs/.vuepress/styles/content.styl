@@ -1,6 +1,38 @@
-.page {
-	margin-top: 100px;
+.theme-container p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.theme-container .page {
+	margin-top: 47px;
 	padding-bottom: 0;
+}
+
+.theme-container .page blockquote {
+  padding: 0;
+  border: 0;
+  color: $accentColor;
+  font-weight: 600;
+  quotes: "“" "”" "‘" "’";
+}
+
+.theme-container blockquote::before {
+  content: open-quote;
+  display: inline-block;
+  font-size: 1.625rem;
+}
+
+.theme-container blockquote::after {
+  content: close-quote;
+  display: inline-block;
+  font-size: 1.625rem;
+}
+
+.theme-container blockquote > p {
+  display: inline;
+  font-size: 1.625rem;
+  line-height: 1.38;
+  letter-spacing: 0.6px;
 }
 
 .page .content > h1 {
@@ -14,13 +46,22 @@
 }
 
 .page .last-updated {
-	color: #707070;
+	color: greyDark;
 }
 
 @media (min-width: 720px) {
 	.page {
 		margin-top: 0;
 	}
+}
+
+.content:not(.custom) > *:first-child {
+  margin: 0 !important;
+}
+
+.theme-container .content:not(.custom) > h1 {
+  padding-top: 60px;
+  margin-bottom: 1.625rem;
 }
 
 @media (max-width: 959px) {
