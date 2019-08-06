@@ -34,6 +34,10 @@
   background-image: url('/icon_menu-exit--white.svg');
 }
 
+.theme-container .sidebar {
+  background-color: greyLight;
+}
+
 @media (min-width: 720px) {
 	.navbar .sidebar-button {
 		top: 0;
@@ -48,7 +52,7 @@
 		margin-top: 35px;
 		margin-left: 40px;
 		margin-right: 40px;
-		background: white;
+		background: greyLight;
 	}
 
 	.theme-container .sidebar {
@@ -57,7 +61,7 @@
 	}
 
   .theme-container:not(.no-sidebar) .navbar {
-    background-color: greyLight;
+    background-color: white;
     border: none;
   }
 
@@ -66,9 +70,21 @@
   }
 
   .home-link {
+    position: relative;
     width: 340px;
     height: 200px;
-    background-color: #fff;
+    background-color: greyLight;
+  }
+
+  .home-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 16px;
+    height: 100%;
+    box-shadow: 4px 0 16px 0px rgba(0,0,0,0.08);
   }
 
   .navbar {
