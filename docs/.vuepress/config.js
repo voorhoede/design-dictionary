@@ -27,6 +27,7 @@ const getDropboxDocumentLocation = pipe([
 
 module.exports = {
   title: 'Digital Design Dictionary',
+  ga: ' UA-55852885-5',
   themeConfig: {
     sidebar: generateSidebar(documentsMetaData),
   },
