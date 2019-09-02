@@ -110,11 +110,20 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/manifest.json', crossorigin: 'use-credentials' }],
     ['meta', { name: 'theme-color', content: manifest.theme_color }],
   ],
-  plugins: {
-    '@vuepress/pwa': {
-      serviceWorker: true,
-      updatePopup: false,
-    }
-  },
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': '' // UA-00000000-0
+      }
+    ],
+    [
+      '@vuepress/pwa',
+      {
+        serviceWorker: true,
+        updatePopup: false,
+      }
+    ]
+  ],
   evergreen: true,
 };
