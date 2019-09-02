@@ -27,6 +27,7 @@ const getDropboxDocumentLocation = pipe([
 
 module.exports = {
   title: 'Digital Design Dictionary',
+  ga: ' UA-55852885-5',
   themeConfig: {
     sidebar: generateSidebar(documentsMetaData),
   },
@@ -109,11 +110,15 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/manifest.json', crossorigin: 'use-credentials' }],
     ['meta', { name: 'theme-color', content: manifest.theme_color }],
   ],
-  plugins: {
-    '@vuepress/pwa': {
-      serviceWorker: true,
-      updatePopup: false,
-    }
-  },
+  plugins: [
+    ['@vuepress/google-analytics', {
+      'ga': 'UA-55852885-5'
+    }],
+    [
+      '@vuepress/pwa', {
+        serviceWorker: true,
+        updatePopup: false,
+    }]
+  ],
   evergreen: true,
 };
