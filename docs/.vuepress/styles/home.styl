@@ -1,3 +1,7 @@
+.page-home .navbar {
+  display: none;
+}
+
 .home {
   padding-left: 0;
   padding-right: 0;
@@ -5,36 +9,9 @@
 }
 
 .home .hero {
-  display: grid;
-  grid-template-rows: repeat(8, 12.5%);
   position relative;
   padding: 0 spacingMedium;
   height: 100%;
-}
-
-.home .hero:after {
-  content: '';
-  position: absolute;
-  grid-row-start: 5;
-  grid-row-end: 9;
-  width: 100%;
-  height: 100%;
-  background-color: brandYellow;
-}
-
-.home .hero:before {
-  content: '';
-  grid-row-start: 4;
-  grid-row-end: -1;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  width: 30%;
-  height: 100%;
-  background-image: url('/curly-bracket--close.svg');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .home .hero .action {
@@ -45,7 +22,6 @@
 }
 
 .home .hero .action-button {
-  grid-row-start: 4;
   position: relative;
   padding: 0;
   background-color: transparent;
@@ -74,10 +50,6 @@
   background-repeat: no-repeat;
 }
 
-.home .hero .action-button:hover:after {
-  animation: arrowBounce ease-in-out 1.4s infinite;
-}
-
 .home .hero img {
   position: relative;
   grid-row-start: 5;
@@ -95,17 +67,16 @@
   color: blue;
 }
 
-.home .hero .description  {
-  grid-row-start: 2;
-  grid-row-end: 4;
-  align-self: center;
-  margin: spacingDefault 0;
-  color: blue;
+.home .description::after  {
+  content: '';
+  background-image: url('/logo.svg');
+  background-repeat: no-repeat;
+  width: 200px;
 }
 
 .theme-container.no-sidebar {
   height 100vh;
-  background-color: bgPastel;
+  /*background-color: bgPastel;*/
 }
 
 @media (max-width: 419px) {
@@ -147,10 +118,6 @@
   .theme-container.no-sidebar .home-link {
     width: 16.4rem;
     height: 100%;
-  }
-
-  .theme-container.no-sidebar {
-    background: linear-gradient(to right, #fffdca 50%, #ffe400 50%, #ffe400 50%);
   }
 
   .theme-container.no-sidebar .links {
@@ -241,19 +208,5 @@
 
   .theme-container.no-sidebar .site-name {
     margin-left: 0;
-  }
-}
-
-@keyframes arrowBounce {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(15px);
-  }
-
-  100% {
-    transform: translateX(0);
   }
 }
