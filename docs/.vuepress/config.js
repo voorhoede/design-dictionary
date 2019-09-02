@@ -111,19 +111,14 @@ module.exports = {
     ['meta', { name: 'theme-color', content: manifest.theme_color }],
   ],
   plugins: [
+    ['@vuepress/google-analytics', {
+      'ga': 'UA-55852885-5'
+    }],
     [
-      '@vuepress/plugin-google-analytics',
-      {
-        'ga': ' UA-55852885-5'
-      }
-    ],
-    [
-      '@vuepress/pwa',
-      {
+      '@vuepress/pwa', {
         serviceWorker: true,
         updatePopup: false,
-      }
-    ]
+    }]
   ],
   evergreen: true,
 };
