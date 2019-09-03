@@ -1,5 +1,5 @@
 <template>
-  <div class="app-footer">Digital Design Dictionary by <a href="https://hike.one" target="_blank" rel="noopener noreferrer"><img src="/logo.svg" alt="Logo of Hike One" height="15" /></a></div>
+  <div class="app-footer">Made by <a href="https://hike.one" target="_blank" rel="noopener noreferrer"><img src="/logo.svg" alt="Logo of Hike One" height="15" /></a></div>
 </template>
 
 <script>
