@@ -72,6 +72,7 @@
   order: 3;
   width: 100%;
   max-width: 500px;
+  margin-left: 0;
   text-align: left;
   font-size: 24px;
 }
@@ -105,6 +106,10 @@
   display: none;
 }
 
+.page-home.theme-container.no-sidebar {
+  background-color: $accentColor;
+}
+
 @media (max-width: 419px) {
   .home {
     padding-left: 0;
@@ -113,6 +118,12 @@
 }
 
 @media (min-width: 720px) {
+  .page-home .home {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+  }
+
   .home .hero h1 {
     margin-top: 2.5rem;
     font-size: 100px;
@@ -121,7 +132,8 @@
   .home .hero .description {
     max-width: 100%;
     text-align: right;
-    width: calc(100vw - 300px);
+    width: 100vw;
+    margin-left: -110px;
 }
 
   .theme-container.no-sidebar .home-link {
@@ -133,9 +145,11 @@
     border-bottom: 0;
   }
 
+  /*
   .theme-container.no-sidebar .home {
     max-width: 100%;
   }
+  */
 
   .home .hero:after {
     display: none;
