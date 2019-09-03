@@ -85,18 +85,18 @@ module.exports = {
   },
   chainMarkdown (config) {
     config.plugin('add-footer')
-    .use(markdown => {
-      markdown.core.ruler.push('add-footer', state => {
-        state.tokens.push({
-          'type': 'html_block',
-            'content': `
-              <app-footer />
-            `,
+      .use(markdown => {
+        markdown.core.ruler.push('add-footer', state => {
+          state.tokens.push({
+            'type': 'html_block',
+              'content': `
+                <app-footer />
+              `,
+          })
+          return state;
         })
-        return state;
       })
-    })
-    .after('component')
+      .after('component')
 
     config.plugin('add-metadata')
       .use(markdown => {
