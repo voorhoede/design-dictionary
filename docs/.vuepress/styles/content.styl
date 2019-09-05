@@ -4,6 +4,18 @@
   line-height: 1.8;
 }
 
+.theme-container h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+@media (min-width: 720px) {
+  .theme-container h1 {
+    font-size: 3.2rem;
+  }
+}
+
+
 .theme-container .page {
 	margin-top: 47px;
 	padding-bottom: 0;
@@ -60,6 +72,10 @@
   margin: 0 !important;
 }
 
+.theme-default-content:not(.custom) {
+  padding-bottom: 20rem !important;
+}
+
 .theme-container .content:not(.custom) > h1 {
   margin-bottom: 1.625rem;
   font-weight: bold;
@@ -79,8 +95,29 @@
 	line-height: 1.75;
 }
 
+@media (max-width: 719px) {
+  /* Spacing of last updated in content area */
+  .theme-default-content:not(.custom)>h1, .theme-default-content:not(.custom)>h2, .theme-default-content:not(.custom)>h3, .theme-default-content:not(.custom)>h4, .theme-default-content:not(.custom)>h5, .theme-default-content:not(.custom)>h6 {
+      margin-top: -4rem !important;
+  }
+
+  .theme-default-content:not(.custom)>:first-child {
+    margin-top: 1rem !important;
+  }
+}
+
+@media (min-width: 720px) {
+	.page {
+		margin-top: 0;
+	}
+}
+
 @media (max-width: 959px) {
 	.content:not(.custom) {
     padding: 0 20px;
 	}
+
+  .theme-default-content:not(.custom) {
+    padding-bottom: 20rem !important;
+  }
 }
