@@ -1,9 +1,10 @@
 ---
-home: false
+home: true
 doc_id: homepage
-heroImage: heroes.svg
-heroText: Playbook
-tagline: Hi! This is our Playbook. This is how we like to work and play at De Voorhoede.
-actionText: Learn more
-actionLink: /employee-handbook/0-introduction.html
+pageClass: page-home
+heroImage:
+heroText: Digital Design Dictionary
+tagline: Made by
+actionText: Start 
+actionLink: /a/above-the-fold.html
 ---
