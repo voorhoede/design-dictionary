@@ -6,10 +6,7 @@
 	padding-right: 40px;
 	border: 0;
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
-}
-
-.theme-container .sidebar {
-  background-color: #fff;
+  background-color: greyLight;
 }
 
 /* Sidebar heading */
@@ -78,11 +75,12 @@ a.sidebar-link.active::before {
 }
 
 @media (min-width: 720px) {
-	.sidebar {
+	.theme-container .sidebar {
+    top: 200px;
 		padding-top: 0;
 	}
 
-  .sidebar-link:hover {
-    font-weight: 700;
+  .theme-container .sidebar-link:hover {
+    font-weight: 600;
   }
 }
