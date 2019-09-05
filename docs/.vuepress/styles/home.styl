@@ -25,6 +25,11 @@
   color: white;
 }
 
+.home .hero .action-button:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .home .hero .action-button:after {
   content: '';
   position: absolute;
@@ -66,13 +71,13 @@
 }
 
 .home .hero .description {
-  position: relative;
+  position: absolute;
+  bottom: .7rem;
+  margin: 0;
   color: white;
   font-weight: 600;
   order: 3;
-  width: 100%;
-  max-width: 500px;
-  margin-left: 0;
+  width: calc(100% - 1.5rem);
   text-align: left;
   font-size: 24px;
 }
@@ -130,11 +135,8 @@
   }
 
   .home .hero .description {
-    max-width: 100%;
-    text-align: right;
-    width: 100vw;
-    margin-left: -110px;
-}
+    bottom: 80px;
+  }
 
   .theme-container.no-sidebar .home-link {
     width: 16.4rem;
@@ -144,12 +146,6 @@
   .theme-container.no-sidebar .links {
     border-bottom: 0;
   }
-
-  /*
-  .theme-container.no-sidebar .home {
-    max-width: 100%;
-  }
-  */
 
   .home .hero:after {
     display: none;
