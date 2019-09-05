@@ -62,10 +62,6 @@
 }
 
 @media (min-width: 720px) {
-  h1 {
-    font-size: 3.2rem;
-  }
-
 	.page {
 		margin-top: 0;
 	}
@@ -96,6 +92,23 @@
   font-size: 1.125rem;
 	font-weight: 600;
 	line-height: 1.75;
+}
+
+@media (max-width: 719px) {
+  /* Spacing of last updated in content area */
+  .theme-default-content:not(.custom)>h1, .theme-default-content:not(.custom)>h2, .theme-default-content:not(.custom)>h3, .theme-default-content:not(.custom)>h4, .theme-default-content:not(.custom)>h5, .theme-default-content:not(.custom)>h6 {
+      margin-top: -4rem !important;
+  }
+
+  .theme-default-content:not(.custom)>:first-child {
+    margin-top: 1rem !important;
+  }
+}
+
+@media (min-width: 720px) {
+	.page {
+		margin-top: 0;
+	}
 }
 
 @media (max-width: 959px) {
