@@ -1,11 +1,3 @@
-.page {
-	background-color: white;
-}
-
-.page .last-updated {
-	color: greyDark;
-}
-
 .theme-container p {
   font-size: 1.125rem;
   line-height: 1.8;
@@ -16,15 +8,14 @@
   font-weight: bold;
 }
 
-@media (min-width: 720px) {
-  .theme-container h1 {
-    font-size: 3.2rem;
-  }
-}
-
 .theme-container .page {
 	margin-top: 47px;
 	padding-bottom: 0;
+  background-color: white;
+}
+
+.theme-container .page .last-updated {
+	color: greyDark;
 }
 
 .theme-container .page blockquote {
@@ -79,6 +70,16 @@
   font-size: 1.125rem;
 	font-weight: 600;
 	line-height: 1.75;
+}
+
+@media (min-width: 720px) {
+  .theme-container .page {
+		padding-left: 341px;
+	}
+
+  .theme-container h1 {
+    font-size: 3.2rem;
+  }
 }
 
 @media (max-width: 719px) {
